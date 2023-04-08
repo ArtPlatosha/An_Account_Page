@@ -1,0 +1,63 @@
+@import url('reset.css');
+
+body {
+	font-family: 'Space Grotesk', Arial, sans-serif;
+	font-size: 1.25rem;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+
+.account {
+	min-height: 100vh;
+	position: relative;
+	display: flex;
+}
+
+.account__left-side {
+	font-family: 'Manrope';
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: relative;
+	flex: 0 0 49.444444%; /* 712/1440 */
+	gap: 1.3125rem;
+}
+
+.account__left-side::before {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	content: '';
+	background: url('../img/image1.jpg') center/ cover no-repeat;
+}
+
+.account__left-side,
+.account__content {
+	padding: 4.75rem 4.166667%; /* 60/1440 */
+}
+
+.account__title,
+.account__text {
+	position: relative;
+}
+
+.account__title {
+	font-size: 2.5rem;
+	font-weight: 800;
+	line-height: 1.15;
+	max-width: 19.3125rem;
+}
+
+.account__text {
+	line-height: 1.35;
+}
+
+.account__content {
+	flex: 1 1 auto;
+}
