@@ -203,3 +203,51 @@ body {
 .account__link-login:hover {
 	text-decoration: none;
 }
+
+.account__left-side::before {
+	transform: translate(-100%, 0px);
+}
+
+.loaded .account__left-side::before {
+	transform: translate(0px, 0px);
+	transition: all 2s ease 1.5s;
+}
+
+.form > *,
+.account__logo,
+.account__login {
+	transform: translate(0px, 1.875rem);
+	opacity: 0;
+}
+
+.loaded .form > *,
+.loaded .account__logo,
+.loaded .account__login {
+	transform: translate(0, 0);
+	opacity: 1;
+	transition: transform 1s ease, opacity 1s ease;
+}
+
+.loaded .account__logo {
+	transition-delay: .5s;
+}
+
+.loaded .form__title {
+	transition-delay: .7s;
+}
+
+.loaded .form__text {
+	transition-delay: .9s;
+}
+
+.loaded .form__items {
+	transition-delay: 1.1s;
+}
+
+.loaded .form__actions {
+	transition-delay: 1.3s;
+}
+
+.loaded .account__login {
+	transition-delay: 1.5s;
+}
