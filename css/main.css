@@ -251,3 +251,24 @@ body {
 .loaded .account__login {
 	transition-delay: 1.5s;
 }
+
+@media (max-width: 64.375rem) {
+	.account {
+		display: block;
+	}
+
+	.account__left-side::before {
+		transform: translate(0px, 0px);
+	}
+
+	.account__left-side,
+	.account__content {
+		padding: 2.75rem 5.166667%;
+	}
+
+	.account__inset {
+		gap: 2.125rem;
+		min-width: 0;
+		max-width: none;
+	}
+}
